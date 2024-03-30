@@ -5,7 +5,7 @@ const movieContainerEl = document.querySelector("#movie-container")
 
 async function findAndRenderMovie(name) {
   movieContainerEl.innerHTML = ""
-  const url = `http://www.omdbapi.com/?apikey=9f61fc22&t=${name}`
+  const url = `https://www.omdbapi.com/?apikey=9f61fc22&t=${name}`
   console.log(url)
   const res = await fetch(url)
   const data = await res.json()
